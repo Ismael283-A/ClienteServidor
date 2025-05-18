@@ -1,10 +1,16 @@
 # Cliente Servidor
-Servidor y cliente HTTP en C#
-Este proyecto consiste en una aplicación de consola en C# que implementa un servidor HTTP básico utilizando HttpListenery un cliente HTTP que se comunica con el servidor usando HttpClient. El servidor escucha solicitudes http://localhost:5000/y responde con un mensaje en formato JSON.
-Estructura del Proyecto
-El proyecto está dividido en dos partes principales:
-Servidor HTTP: Implementado en la clase SimpleHttpServer.
-Cliente HTTP: Implementado en la clase SimpleHttpClient.
+Servidor y cliente HTTP en C#  
+
+Este proyecto consiste en una aplicación de consola en C# que implementa un servidor HTTP básico utilizando HttpListenery un cliente HTTP que se comunica con el servidor usando HttpClient. El servidor escucha solicitudes http://localhost:5000/y responde con un mensaje en formato JSON.  
+
+Estructura del Proyecto  
+
+El proyecto está dividido en dos partes principales:  
+
+Servidor HTTP: Implementado en la clase SimpleHttpServer.  
+
+Cliente HTTP: Implementado en la clase SimpleHttpClient.  
+
 Cómo ejecutar el servidor
 Abre una terminal y navega al directorio del proyecto.
 Compila y ejecuta el servidor con el siguiente comando:
