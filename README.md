@@ -8,22 +8,22 @@ Cliente HTTP: Implementado en la clase SimpleHttpClient.
 Cómo ejecutar el servidor
 Abre una terminal y navega al directorio del proyecto.
 Compila y ejecuta el servidor con el siguiente comando:
-   dotnet run --project SimpleHttpServer
+    dotnet run --project SimpleHttpServer
 El servidor comenzará a escuchar en http://localhost:5000/.
 Cómo ejecutar al cliente
 Abre otra terminal y navega al directorio del proyecto.
 Compila y ejecuta el cliente con el siguiente comando:
    dotnet run --project SimpleHttpClient
-Código del servidor
+#Código del servidor
 
-using System;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
+    using System;
+    using System.Net;
+    using System.Text;
+    using System.Threading.Tasks;
 
-class SimpleHttpServer
-{
-    static async Task Main()
+    class SimpleHttpServer
+    {
+     static async Task Main()
     {
         var listener = new HttpListener();
         listener.Prefixes.Add("http://localhost:5000/");
@@ -46,17 +46,17 @@ class SimpleHttpServer
             await response.OutputStream.WriteAsync(buffer, 0, buffer.Length);
             response.Close();
         }
+     }
     }
-}
 
-Código del cliente
+#Código del cliente
 
-using System;
-using System.Net.Http;
-using System.Threading.Tasks;
+    using System;
+    using System.Net.Http;
+    using System.Threading.Tasks;
 
-class SimpleHttpClient
-{
+    class SimpleHttpClient
+    {
     static async Task Main()
     {
         var client = new HttpClient();
@@ -75,6 +75,6 @@ class SimpleHttpClient
             Console.WriteLine($"¡Error en la petición! {ex.Message}");
         }
     }
-}
-Conclusión
+   }
+#Conclusión
 Este proyecto es un ejemplo básico de cómo crear un servidor y un cliente HTTP en C#.
