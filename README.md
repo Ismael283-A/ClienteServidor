@@ -11,16 +11,25 @@ Servidor HTTP: Implementado en la clase SimpleHttpServer.
 
 Cliente HTTP: Implementado en la clase SimpleHttpClient.  
 
-Cómo ejecutar el servidor
-Abre una terminal y navega al directorio del proyecto.
-Compila y ejecuta el servidor con el siguiente comando:
-    dotnet run --project SimpleHttpServer
-El servidor comenzará a escuchar en http://localhost:5000/.
-Cómo ejecutar al cliente
-Abre otra terminal y navega al directorio del proyecto.
-Compila y ejecuta el cliente con el siguiente comando:
-   dotnet run --project SimpleHttpClient
-#Código del servidor
+Cómo ejecutar el servidor  
+
+Abre una terminal y navega al directorio del proyecto.  
+
+Compila y ejecuta el servidor con el siguiente comando:  
+
+    dotnet run --project SimpleHttpServer  
+    
+El servidor comenzará a escuchar en http://localhost:5000/.  
+ 
+Cómo ejecutar al cliente  
+
+Abre otra terminal y navega al directorio del proyecto.  
+
+Compila y ejecuta el cliente con el siguiente comando:  
+
+    dotnet run --project SimpleHttpClient  
+   
+#Código del servidor  
 
     using System;
     using System.Net;
